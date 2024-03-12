@@ -21,7 +21,7 @@ Examples of bad prompts:
 - Deploy for me X resources in my resource group "bad-example-rg" (too generic, no specific resource types)
 - Add a tag to a resource (trivial action)
 - Check the status of my VM (would not use IaC)
-- Deploy for me three VMs, two virtual networks, one AKS cluster, and five storage accounts under resource group "bad-example-rg" (overly specific and thus unlikely to apply to others)
+- Deploy for me three VMs named "joe" "jill" and "jack", two virtual networks named "nate" and "natalie", one AKS cluster named "cluster1", and five storage accounts "one" "two "three" "four" and "five" under resource group "bad-example-rg" (overly specific/wordy and thus unlikely to apply to others, could be made good with generalization)
 
 ## Disclaimers
 The Azure Deployments team does NOT guarantee that they will make submitted prompts work with full confidence or functionality. Input will be taken to help make best efforts to improve your Copilot IaC experience. Issues will be closed when the team deems that the best effort has been made.

@@ -1,33 +1,27 @@
-# Project
+# AI-IaC-Prompts
+Give your feedback or thoughts on what prompts you would like to see improved by the Azure Deployments team.
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+## Submitting a prompt
+Create a new issue by using the provided "feature request" template. Please ensure that you have checked for any duplicate issues before creating the issue. If you are inserting a prompt with sensitive data, make sure to redact any private info before creating your issue.
 
-As the maintainer of this project, please make a few updates:
+### **IMPORTANT** What's a good prompt to submit to this forum? 
+For the purposes of this forum, a good prompt meets the following criteria:
+- Can be run in Copilot with a specific expected result
+- Specific resource types should be involved at some point contextually. This can be explicit (i.e. create a VM), or implicit (i.e. create a three-tiered application)
+- Expected result is generic enough to apply to other customers. While specific prompts are necessary for personal Copilot use, they will likely be unapplicable to others and thus deprioritized. Improving a generic variation of the specific prompt will improve the specific output.
+- Action required is not trivial (user could not easily accomplish on their own)
+- Prompt is relevant to IaC
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+Examples of good prompts:
+- Help me set up a three-tiered application
+- Create a role assignment with read permissions for my resource group "good-example-rg" (specific RG name is ok)
+- Help upgrade this existing code tied to vX.XX to vX.XX
 
-## Contributing
+Examples of bad prompts:
+- Deploy for me X resources in my resource group "bad-example-rg" (too generic, no specific resource types)
+- Add a tag to a resource (trivial action)
+- Check the status of my VM (would not use IaC)
+- Deploy for me three VMs, two virtual networks, one AKS cluster, and five storage accounts under resource group "bad-example-rg" (overly specific and thus unlikely to apply to others)
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+## Disclaimers
+The Azure Deployments team does NOT guarantee that they will make submitted prompts work with full confidence or functionality. Input will be taken to help make best efforts to improve your Copilot IaC experience. Issues will be closed when the team deems that the best effort has been made.

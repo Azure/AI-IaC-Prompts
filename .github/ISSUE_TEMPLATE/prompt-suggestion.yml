@@ -1,0 +1,70 @@
+name: Prompt Suggestion
+description: Suggest a prompt related to Infrastructure as Code (IaC)
+title: "<insert prompt here>"
+labels: ["enhancement"]
+body:
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm
+      description: Please confirm you have read the prompt writing guide in the [README](https://github.com/stemaMSFT/AI-IaC-Prompts/blob/main/README.md) and searched for similar issues to avoid duplication.
+      options:
+        - label: I have read the guide to writing a good prompt and have searched for duplicate issues. I have titled this issue with my prompt for clarity.
+          required: true
+  - type: input
+    id: prompt
+    attributes:
+      label: Prompt
+      description: What is the suggested prompt you're submitting?
+      placeholder: ex. How do I deploy a virtual network?
+    validations:
+      required: true
+  - type: checkboxes
+    id: tool
+    attributes:
+      label: Tool
+      description: What deployment tool(s) does this prompt apply to?
+      options:
+        - label: Bicep
+        - label: Terraform
+        - label: ARM Template
+        - label: Other
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Expected Outputs
+      description: Please specify what you expect to be the output of the prompt.
+      placeholder: |
+        "Ex: A resource definition for virtual network."
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Current Outputs
+      description: Detail what outputs you currently are getting.
+      placeholder: |
+        "Ex: The resource definition is out of date and does not include the latest features."
+    validations:
+      required: false
+  - type: checkboxes
+    id: copilot
+    attributes:
+      label: Copilot
+      description: If you shared an output, please specify which copilot you used.
+      options:
+        - label: GitHub Copilot
+        - label: Azure Copilot
+        - label: ChatGPT
+        - label: Other
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Other Notes
+      description: Please add any other notes about the issue here.
+    validations:
+      required: false

@@ -2,7 +2,7 @@
 Give your feedback or thoughts on what prompts you would like to see improved by the Azure Deployments team.
 
 ## Submitting a prompt
-Create a new issue by using the provided "feature request" template. Please ensure that you have checked for any duplicate issues before creating the issue. If you are inserting a prompt with sensitive data, make sure to redact any private info before creating your issue.
+Create a new issue by using the [provided "feature request" template](https://github.com/Azure/AI-IaC-Prompts/issues/new?assignees=&labels=enhancement&projects=&template=prompt-suggestion.yml&title=%3Cinsert+prompt+here%3E). Please ensure that you have checked for any duplicate issues before creating the issue. If you are inserting a prompt with sensitive data, make sure to redact any private info before creating your issue.
 
 ### **IMPORTANT** What's a good prompt to submit to this forum? 
 For the purposes of this forum, a good prompt meets the following criteria:

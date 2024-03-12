@@ -32,7 +32,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: repro
+    id: expected
     attributes:
       label: Expected Outputs
       description: Please specify what you expect to be the output of the prompt.
@@ -41,7 +41,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: repro
+    id: current
     attributes:
       label: Current Outputs
       description: Detail what outputs you currently are getting.
@@ -66,5 +66,7 @@ body:
     attributes:
       label: Other Notes
       description: Please add any other notes about the issue here.
+      placeholder: |
+        "Ex: My virtual network requires a dev tag as well."
     validations:
       required: false

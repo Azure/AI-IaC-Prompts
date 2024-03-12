@@ -44,7 +44,7 @@ body:
     id: current
     attributes:
       label: Current Outputs
-      description: Detail what outputs you currently are getting.
+      description: Detail what outputs you currently are getting. Screenshots are welcome.
       placeholder: |
         "Ex: The resource definition is out of date and does not include the latest features."
     validations:
